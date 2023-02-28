@@ -16,4 +16,7 @@ jobs:
     - name: Run the freakin' script
       run: |
         pwd
+        ls -la
+        ls -la tools
+        ls -la tools/building
         ./tools/building/script.bat
