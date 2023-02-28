@@ -15,4 +15,5 @@ jobs:
     steps:
     - name: Run the freakin' script
       run: |
+        pwd
         ./tools/building/script.bat
