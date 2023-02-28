@@ -1,0 +1,17 @@
+name: PullRequest
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+   MaxQtDynamic: runs-on: macos-11
+
+    strategy:
+      fail-fast: false
+
+    steps:
+    - name: Run the freakin' script
+      run: |
+        ./tools/building/script.bat
