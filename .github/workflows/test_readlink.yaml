@@ -16,6 +16,7 @@ jobs:
     - name: clone me
       run: |
         git clone git@github.com:juangpc/testing_readlink.git .    - name: pwd
+    - name: where am i
       run: |
         pwd
     - name: ls -la
