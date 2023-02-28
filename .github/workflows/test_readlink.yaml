@@ -13,10 +13,19 @@ jobs:
       fail-fast: false
 
     steps:
-    - name: Run the freakin' script
+    - name: pwd
       run: |
         pwd
+    - name: ls -la
+      run: |
         ls -la
+    - name: ls -la tools
+      run: |
         ls -la tools
+    - name: ls -la tools/building
+      run: |
         ls -la tools/building
+        ./tools/building/script.bat
+    - name: ./tools/building/script.bat
+      run: |
         ./tools/building/script.bat
