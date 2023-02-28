@@ -12,8 +12,9 @@ BuildFolder=""
 SourceFolder=""
 NumProcesses="1"
 
-ScriptPath="$(readlink -f $(dirname "$0"))"
-BasePath="$(readlink -f $ScriptPath/../..)"
+ScriptPath="$(cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P)"
+BasePath="$(cd "$(ScriptPath)../.." >/dev/null 2>&1; pwd -P)"
+
 
 if [ "$(uname)" == "Darwin" ]; then
     NumProcesses=$(sysctl -n hw.physicalcpu)

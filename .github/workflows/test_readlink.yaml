@@ -28,7 +28,6 @@ jobs:
     - name: ls -la tools/building
       run: |
         ls -la tools/building
-        ./tools/building/script.bat
     - name: ./tools/building/script.bat
       run: |
         ./tools/building/script.bat
