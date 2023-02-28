@@ -56,7 +56,6 @@ SourceFolder=${BasePath}/src
 
 doPrintConfiguration
 
-exit 1
 
 
 
