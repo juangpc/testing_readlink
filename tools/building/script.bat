@@ -15,9 +15,9 @@ BuildFolder=""
 SourceFolder=""
 
 ScriptPath="$(cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P)"
-BasePath="$(cd "$(ScriptPath)../.." >/dev/null 2>&1; pwd -P)"
+BasePath="$(cd "$($ScriptPath)../.." >/dev/null 2>&1; pwd -P)"
 ScriptPath2="$(cleanPath $0)"
-BasePath2="$(cleanPath $(ScriptPath)../..)"
+BasePath2="$(cleanPath $($ScriptPath)../..)"
 
 
 if [ "$(uname)" == "Darwin" ]; then
